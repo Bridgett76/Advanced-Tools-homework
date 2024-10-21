@@ -5,7 +5,7 @@
 }
 
 body {
-  margin 60px auto;
+  margin: 60px auto;
 }
 
 h1,
@@ -33,7 +33,6 @@ p {
   border-radius: 4px;
   font-size: 18px;
   line-height: 1.5;
-  text-align: center;
 }
 
 .navigation-links {
@@ -75,8 +74,10 @@ p {
   padding: 20px 15px;
   text-decoration: none;
 }
-
-
+.primary-link:hover {
+  color: blue;
+  text-decoration: underline;
+}
 
 .about-paragraphs {
   display: flex;
@@ -97,4 +98,21 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  .homepage-images {
+    display: none;
+  }
+  .navigation-links {
+    font-size: 13px;
+    padding: 15px 10px;
+  }
+  .primary-link {
+    display: flex;
+    justify-content: center;
+  }
+  .email-link {
+    font-size: 20px;
+  }
 }
